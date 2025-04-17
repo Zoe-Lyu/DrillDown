@@ -97,6 +97,7 @@ project(":core") {
 		delete "$projectDir/gen"
         mkdir "$projectDir/gen"
         options.compilerArgs = ['-processor', 'de.dakror.annotations.LmlTagProcessor', '-s', "$projectDir/gen"]
+	options.encoding =  "UTF-8"
    //	    options.annotationProcessorGeneratedSourcesDirectory = "$projectDir/gen"
     }
 }
